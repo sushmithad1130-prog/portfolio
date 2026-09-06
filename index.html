@@ -64,6 +64,724 @@
             color: #ff3d78;
         }
 
+        /* HERO SECTION */
+
+        .hero {
+            min-height: 700px;
+            padding: 150px 10% 80px;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(120deg, #080412, #160822, #0d0615);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .shape-one {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #5b073d, #c40045);
+            top: -250px;
+            left: 10%;
+            opacity: 0.5;
+        }
+
+        .shape-two {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #6d0848, #e90046);
+            bottom: -300px;
+            right: -100px;
+            opacity: 0.5;
+        }
+
+        .hero-content {
+            width: 55%;
+            color: white;
+            position: relative;
+            z-index: 2;
+        }
+
+        .small-text {
+            color: #ff3d78;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 65px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #ff3d78;
+        }
+
+        .hero h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p:not(.small-text) {
+            color: #cfc7d3;
+            line-height: 1.8;
+            max-width: 550px;
+            margin-bottom: 30px;
+        }
+
+        /* BUTTONS */
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 14px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .primary-btn {
+            background-color: #e90046;
+            color: white;
+        }
+
+        .primary-btn:hover {
+            background-color: #ff3d78;
+            transform: translateY(-3px);
+        }
+
+        .secondary-btn {
+            border: 1px solid white;
+            color: white;
+        }
+
+        .secondary-btn:hover {
+            background-color: white;
+            color: black;
+        }
+
+        /* PROFILE IMAGE */
+
+        .hero-image {
+            width: 45%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .image-circle {
+            width: 430px;
+            height: 430px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #9b0a50, #e90046);
+            position: absolute;
+            z-index: 1;
+            box-shadow: 0 0 60px rgba(233, 0, 70, 0.4);
+        }
+
+        .profile-image {
+            width: 380px;
+            height: 380px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center;
+            position: relative;
+            z-index: 2;
+            border: 6px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+        }
+
+        /* GENERAL SECTIONS */
+
+        section {
+            padding: 90px 10%;
+        }
+
+        .section-tag {
+            color: #e90046;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .section-title {
+            font-size: 42px;
+            margin-bottom: 30px;
+            color: #181818;
+        }
+
+        /* ABOUT */
+
+        .about {
+            background-color: white;
+        }
+
+        .about-container {
+            max-width: 850px;
+        }
+
+        .about-text {
+            font-size: 17px;
+            line-height: 1.9;
+            color: #555;
+        }
+
+        .about-text p {
+            margin-bottom: 20px;
+        }
+
+        /* SKILLS */
+
+        .skills {
+            background-color: #f2f2f2;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .skill-card {
+            background-color: white;
+            padding: 28px;
+            border-radius: 12px;
+            border-bottom: 4px solid #e90046;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            transition: 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-7px);
+        }
+
+        .skill-card h3 {
+            margin-bottom: 12px;
+            font-size: 20px;
+            color: #222;
+        }
+
+        .skill-card p {
+            color: #666;
+            line-height: 1.6;
+            font-size: 15px;
+        }
+
+        /* PROJECT */
+
+        .projects {
+            background-color: white;
+        }
+
+        .project-card {
+            border-radius: 15px;
+            overflow: hidden;
+            background-color: #12081d;
+            color: white;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-header {
+            padding: 45px;
+            background: linear-gradient(135deg, #31082c, #c00046);
+        }
+
+        .project-header h3 {
+            font-size: 30px;
+            margin-bottom: 12px;
+        }
+
+        .project-header p {
+            line-height: 1.6;
+        }
+
+        .project-content {
+            padding: 40px;
+        }
+
+        .project-description {
+            color: #d4cbd8;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 35px;
+        }
+
+        .feature {
+            background-color: #21112b;
+            padding: 20px;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .tech {
+            background-color: #e90046;
+            padding: 10px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        /* CONTACT */
+
+        .contact {
+            background-color: #0b0618;
+            color: white;
+            text-align: center;
+        }
+
+        .contact .section-title {
+            color: white;
+        }
+
+        .contact-text {
+            color: #c5bec8;
+            max-width: 600px;
+            margin: 0 auto 30px;
+            line-height: 1.8;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .contact-link {
+            color: white;
+            text-decoration: none;
+            border: 1px solid #555;
+            padding: 14px 22px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .contact-link:hover {
+            background-color: #e90046;
+            border-color: #e90046;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background-color: #050209;
+            color: #999;
+            text-align: center;
+            padding: 25px;
+        }
+
+        /* MOBILE VERSION */
+
+        @media (max-width: 768px) {
+
+            nav {
+                padding: 18px 7%;
+            }
+
+            nav ul {
+                gap: 12px;
+            }
+
+            nav ul li a {
+                font-size: 12px;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                padding: 130px 7% 70px;
+            }
+
+            .hero-content {
+                width: 100%;
+            }
+
+            .hero h1 {
+                font-size: 45px;
+            }
+
+            .hero h2 {
+                font-size: 20px;
+            }
+
+            .hero-content p:not(.small-text) {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .hero-image {
+                width: 100%;
+                margin-top: 60px;
+            }
+
+            .image-circle {
+                width: 310px;
+                height: 310px;
+            }
+
+            .profile-image {
+                width: 280px;
+                height: 280px;
+            }
+
+            section {
+                padding: 70px 7%;
+            }
+
+            .section-title {
+                font-size: 32px;
+            }
+
+            .project-header,
+            .project-content {
+                padding: 30px 20px;
+            }
+
+            .project-header h3 {
+                font-size: 24px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav>
+
+        <div class="logo">Sushmitha D.</div>
+
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- HERO SECTION -->
+
+    <section class="hero">
+
+        <div class="shape-one"></div>
+        <div class="shape-two"></div>
+
+        <div class="hero-content">
+
+            <p class="small-text">HELLO, I'M</p>
+
+            <h1>Sushmitha <span>D.</span></h1>
+
+            <h2>Aspiring Java Full-Stack Developer</h2>
+
+            <p>
+                Aspiring Java Full-Stack Developer with an interest in building
+                practical web applications. I enjoy learning through hands-on
+                projects and continuously improving my software development skills.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn primary-btn">
+                    View My Project
+                </a>
+
+                <a href="#contact" class="btn secondary-btn">
+                    Contact Me
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+
+            <div class="image-circle"></div>
+
+            <img src="Profile.jpeg"
+                 alt="Sushmitha D"
+                 class="profile-image">
+
+        </div>
+
+    </section>
+
+    <!-- ABOUT -->
+
+    <section class="about" id="about">
+
+        <div class="about-container">
+
+            <p class="section-tag">ABOUT ME</p>
+
+            <h2 class="section-title">Hi, I'm Sushmitha</h2>
+
+            <div class="about-text">
+
+                <p>
+                    I am an aspiring Java Full-Stack Developer with an interest
+                    in building practical web applications and learning through
+                    hands-on projects.
+                </p>
+
+                <p>
+                    My technical journey includes Java, JDBC, SQL, HTML, CSS,
+                    JavaScript, Spring Boot, Spring Data JPA, Hibernate,
+                    REST APIs, and database technologies.
+                </p>
+
+                <p>
+                    I have applied these technologies while building MetroParcel,
+                    a web-based parcel booking and tracking application. I am
+                    currently seeking an entry-level opportunity where I can
+                    learn, contribute, and grow as a software developer.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SKILLS -->
+
+    <section class="skills" id="skills">
+
+        <p class="section-tag">MY TECHNICAL JOURNEY</p>
+
+        <h2 class="section-title">Technical Skills</h2>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <h3>☕ Java</h3>
+                <p>Knowledge of Core Java and Object-Oriented Programming concepts.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>🔗 JDBC</h3>
+                <p>Basic understanding of database connectivity and CRUD operations.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>🌐 HTML & CSS</h3>
+                <p>Used to build and style responsive web pages and user interfaces.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>⚡ JavaScript</h3>
+                <p>Used for adding interactivity to web applications.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>🗄️ SQL & Databases</h3>
+                <p>Basic understanding of SQL queries and relational databases.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>🌱 Spring Boot</h3>
+                <p>Used to build backend applications and REST APIs.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>⚙️ JPA & Hibernate</h3>
+                <p>Used for object-relational mapping and database persistence.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>🔌 REST APIs</h3>
+                <p>Experience building basic RESTful APIs.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>🐙 Git & GitHub</h3>
+                <p>Used for version control and hosting development projects.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PROJECT -->
+
+    <section class="projects" id="projects">
+
+        <p class="section-tag">FEATURED PROJECT</p>
+
+        <h2 class="section-title">MetroParcel 🚇</h2>
+
+        <div class="project-card">
+
+            <div class="project-header">
+
+                <h3>Smart Metro-Based Parcel Management System</h3>
+
+                <p>
+                    A web-based parcel booking and tracking application based
+                    on a metro transportation concept.
+                </p>
+
+            </div>
+
+            <div class="project-content">
+
+                <p class="project-description">
+                    MetroParcel is a Java Full-Stack web application designed
+                    for booking, managing, and tracking parcels transported
+                    between metro stations. The application provides customer
+                    and administrative interfaces for managing parcel bookings
+                    and tracking delivery progress through different stages.
+                </p>
+
+                <div class="features">
+
+                    <div class="feature">📦 Parcel Booking</div>
+                    <div class="feature">📍 Parcel Tracking</div>
+                    <div class="feature">🔄 Status Management</div>
+                    <div class="feature">👩‍💼 Admin Dashboard</div>
+                    <div class="feature">🔌 REST APIs</div>
+                    <div class="feature">🚇 Metro Delivery Concept</div>
+
+                </div>
+
+                <h3>Technologies Used</h3>
+
+                <div class="tech-stack">
+
+                    <span class="tech">Java</span>
+                    <span class="tech">Spring Boot</span>
+                    <span class="tech">Spring Data JPA</span>
+                    <span class="tech">Hibernate</span>
+                    <span class="tech">REST APIs</span>
+                    <span class="tech">H2 Database</span>
+                    <span class="tech">HTML</span>
+                    <span class="tech">CSS</span>
+                    <span class="tech">JavaScript</span>
+                    <span class="tech">Git</span>
+                    <span class="tech">GitHub</span>
+
+                </div>
+
+                <div class="hero-buttons" style="margin-top: 30px;">
+
+                    <a href="https://github.com/sushmithad1130-prog/MetroParcel"
+                       target="_blank"
+                       class="btn primary-btn">
+
+                        💻 View Project on GitHub
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+
+    <section class="contact" id="contact">
+
+        <p class="section-tag">GET IN TOUCH</p>
+
+        <h2 class="section-title">Let's Connect</h2>
+
+        <p class="contact-text">
+            I am currently looking for entry-level opportunities where I can
+            apply my skills, contribute to projects, and grow as a software developer.
+        </p>
+
+        <div class="contact-links">
+
+            <a href="mailto:sushmithad1130@gmail.com"
+               class="contact-link">
+                📧 Email Me
+            </a>
+
+            <a href="https://github.com/sushmithad1130-prog"
+               target="_blank"
+               class="contact-link">
+                💻 GitHub
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+        © 2026 Sushmitha D. | Aspiring Java Full-Stack Developer
+    </footer>
+
+</body>
+
+</html>            background-color: #0b0618;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ff3d78;
+        }
+
 
         /* HERO SECTION */
 
